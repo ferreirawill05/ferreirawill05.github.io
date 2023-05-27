@@ -469,28 +469,28 @@ footer{
     margin-right: 35px;
   }
   
-  .banner2 {
+  .banner4 {
     height: 260px;
     margin-top: 15px;
     z-index: 0;
   }
   
-  .info2 {
+  .info4 {
     width: 90%;
   }
   
-  .info2 h2 {
+  .info4 h2 {
     font-size: 23px;
     margin-bottom: 18px;
     text-align: center;
   }
   
-  .info2 p {
+  .info4 p {
     font-size: 16px;
     line-height: 20px;
   }
   
-  .container-info2 {
+  .container-info4 {
     flex-direction: column-reverse;
     align-items: center;
   }
