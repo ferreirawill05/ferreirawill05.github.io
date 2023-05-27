@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav{
+    font-family: 'Text Me One';
+    margin-right: 20px; 
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  li a {
+    color: #000000;
+    font-size: 22px;
+  }
+  
+  li:hover,
+  li:focus-within {
+    cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+    background: #808080b8;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 15rem;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    z-index: 1;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo{
+    width: 15%;
+    padding: 15px;
+    margin-left: 15px;
+  }
+
+  .menu{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  hr{
+    width: 97%;
+    margin-left: 25px;
+  }
+
+  .dropdown a {
+    color: white;
+  }
+
+  .contatoALL{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 790px;
+    margin-bottom: 8%;
+  }
+
+  .contatoE{
+    background-color: #EBEBEB;
+    width: 45%;
+    height: 105%;
+    margin: 55px;
+    border-radius: 20px;
+    box-shadow: 20px 25px 61px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contatoD{
+    background-color: #EBEBEB;
+    width: 45%;
+    height: 105%;
+    margin: 55px;
+    border-radius: 20px;
+    box-shadow: -27px 25px 61px rgba(0, 0, 0, 0.25);
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+  }
+  
+    .nome{
+      width: 590px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
+    }
+  
+    .email{
+      width: 590px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
+    }
+
+    .msg{
+      width: 590px;
+      height: 245px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
+    }
+
+    h1{
+      font-family: 'Text Me One';
+      font-size: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .botao{
+      width: 160px;
+      height: 55px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
+    }
+
+    input::placeholder{
+      font-family: 'Text Me One';
+      margin-left: 70px;
+    }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

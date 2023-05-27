@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Florir</title>
+    <link rel="stylesheet" href="../CSS/contato.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="../assets/logo2.png" alt="logo">
+            <nav class="menu">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link"  href="../index.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link"  href="#">Serviços</a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li class="nav-item"><a class="nav-link"  href="../HTML/psico1.html">Atendimento Infantil e Adolescente</a></li>
+                            <li class="nav-item"><a class="nav-link"  href="../HTML/psico2.html">Psicoterapia Adulta (online)</a></li>
+                            <li class="nav-item"><a class="nav-link"  href="../HTML/psico3.html">Tratamento para Ansiedade e Depressão</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../HTML/psico4.html">Psicoterapia Vida, Profissão e Relacionamento</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link"  href="#">Projetos</a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li class="nav-item"><a class="nav-link"  href="../HTML/project1.html">Projeto Escola</a></li>
+                            <li class="nav-item"><a class="nav-link"  href="../HTML/project2.html">Projeto Gestação</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link"  href="../HTML/contato.html">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav> 
+        </div>
+    </header>
+    <hr>
+    <script src="../JS/navbar.js"></script>
+    <section>
+        <div class="contatoALL">
+            <div class="contatoE">
+                <form method="post" action="/PHP/send_email.php">
+                    <h1>Nos Contate!</h1>
+
+                    <input class="nome" type="text" id="nome" placeholder="Seu nome">
+                    <small class="erro"></small>
+
+                    <input class="email" type="text" id="email" placeholder="Insira seu E-mail">
+                    <small class="erro"></small>
+
+                    <input class="msg" type="text" id="mensagem" placeholder="Insira sua mensagem">
+                    <small class="erro"></small>
+                </form>
+                <div class="botao">
+                    <input class="botao" type="submit" value="Enviar" onclick="sendEmail()">
+                    <P id="sucesso"></P>
+                </div>
+            </div>
+            <div class="contatoD">
+
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p>Todos os direitos reservados₢</p>
+    </footer>
+</body>
+</html>

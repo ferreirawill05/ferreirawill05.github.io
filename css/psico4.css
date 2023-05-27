@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav{
+    font-family: 'Text Me One';
+    margin-right: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  li a {
+    color: #000000;
+    font-size: 22px;
+  }
+  
+  li:hover,
+  li:focus-within {
+    cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+    background: #808080b8;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 15rem;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    z-index: 1;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo{
+    width: 15%;
+    padding: 15px;
+    margin-left: 15px;
+  }
+
+  .menu{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  hr{
+    width: 97%;
+    margin-left: 25px;
+  }
+
+  .dropdown a {
+    color: white;
+  }
+
+  .container-psico4{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner4{
+    margin-top: 3%;
+    width: 1839px;
+    height: 955px;
+  }
+
+  .info4{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-family: 'Text Me One';
+    width: 57%;
+  }
+
+.info4 h2{
+    font-family: 'Text Me One';
+    font-size: 55px;
+    margin-bottom: 85px
+}
+
+.info4 p{
+    font-size: 40px;
+    text-align: justify;
+}
+
+.container-info4{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+.topicos{
+    font-family: 'Text Me One';
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-left: 80px;
+    width: 35%;
+    margin-top: 8%;
+}
+
+.topicos h2{
+    font-size: 55px;
+    margin-bottom: 60px
+}
+
+.topicos a{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.container-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.equipe{
+  margin-left: 4%;
+}
+
+.bottom-info{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Text Me One';
+    font-size: 35px;
+    text-align: justify;
+    margin-right: 5%;
+    line-height: 55px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+footer{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.hambuger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: unset;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+@media(max-width: 1500px){
+
+  .logo{
+    width: 20%;
+  }
+
+  .banner4{
+    width: 100%;
+    height: 750px;
+    margin-top: 15px;
+  }
+ 
+  .info4{
+    width: 72%;
+  }
+
+  .info4 h2{
+    font-size: 46px;
+    margin-bottom: 32px;
+  }
+
+  .container-info4{
+    align-items: center;
+    margin-top: 4%
+  }
+
+  .topicos{
+    margin-left: 30px;
+    width: 36%;
+    margin-top: unset;
+  }
+
+  .topicos h2{
+    font-size: 50px;
+    margin-bottom: 35px
+  }
+
+  .topicos a{
+    font-size: 28px;
+  }
+
+  .casal-juntos{
+    width: 55%;
+  }
+  
+  .container-bottom{
+    align-items: center;
+    margin-top: 4%;
+  }
+
+  .equipe{
+    margin-left: unset;
+    width: 50%;
+  }
+
+  .bottom-info {
+    width: 42%;
+    font-size: 27px;
+    margin-right: 5%;
+    line-height: 55px;
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+
+}
+
+@media(max-width: 800px){
+
+    .bar{
+      display: block;
+    }
+    
+    .hambuger{
+      display: block;
+    }
+    
+    .bar{
+      display: block;
+    }
+    
+    .hambuger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    
+    .hambuger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hambuger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+      position:fixed ;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: rgb(206, 206, 206);
+      width: 100%;
+      text-align: center;
+      transition: 0.3;
+    }
+    
+    .nav.item{
+      margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+      left: 0;
+      z-index: 1;
+    }
+    
+    ul li ul {
+      background: #737373;
+    }
+  
+    .logo{
+      width: 25%;
+    }
+  
+    .banner4 {
+      width: 100%;
+      height: 500px;
+      margin-top: 15px;
+      z-index: 0;
+  }
+  
+  .info4 {
+    width: 76%;
+    }
+  
+  .info4 h2 {
+    font-size: 38px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .info4 p {
+    font-size: 26px;
+    width: 88%;
+    line-height: 40px;
+}
+  
+  .container-info4 {
+    margin-top: 7%;
+  }
+  
+  .topicos {
+    width: 45%;
+    margin-right: 30px;
+  }
+
+  .topicos h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+  
+  .topicos a {
+    font-size: 20px;
+  }
+
+  .casal-juntos{
+    width: 50%;
+  }
+  
+  .container-bottom {
+    align-items: center;
+    margin: 5% 0 5% 0;
+  }
+  
+  .bottom-info {
+    width: 45%;
+    font-size: 20px;
+    margin-left: 6%;
+    line-height: 36px;
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+  }

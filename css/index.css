@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav{ 
+    font-family: 'Text Me One';
+}
+
+ul{ 
+    list-style: none; 
+}
+
+li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  li a {
+    color: #000000;
+    font-size: 22px;
+  }
+  
+  li:hover,
+  li:focus-within {
+    cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+    background: #808080b8;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 15rem;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo{
+    width: 15%;
+    padding: 15px;
+    margin-left: 15px;
+  }
+
+  .menu{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  hr{
+    width: 97%;
+    margin-left: 25px;
+  }
+
+  .dropdown{
+    z-index: 1;
+  }
+
+  .dropdown a {
+    color: white;
+  }
+
+  .container-sobre{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .img_sobre{
+    filter: drop-shadow(29px 10px 21px rgba(0, 0, 0, 0.26));
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .info-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start
+  }
+
+  .info-sobre h2{
+    font-family: 'Text Me One';
+    font-size: 40px;
+    margin-bottom: 50px
+  }
+
+  .container-sobre p {
+    width: 80%;
+    font-size: 28px;
+    font-family: 'Text Me One';
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+.container-psico{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quadro-sobre{
+  filter: drop-shadow(19px 20px 30px rgba(0, 0, 0, 0.25));
+  border-radius: 0px 10px 10px 0px;
+}
+
+.psicoterapia{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.psicoterapia h2{
+  font-family: 'Text Me One';
+  font-size: 55px;
+  margin-bottom: 50px
+}
+
+.psicoterapia p{
+  width: 77%;
+  font-size: 28px;
+  font-family: 'Text Me One';
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 60px;
+}
+
+.undraw-sobre{
+  margin-top: 15%;
+}
+
+.container-final{
+  padding: 35px;
+}
+
+.div-final {
+    background-image: url(../assets/Rectangle\ 1.png);
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 5% 0 0;
+    box-shadow: 0px -7px 91px rgba(0, 0, 0, 0.25);
+}
+
+footer{
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hambuger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: unset;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+@media(max-width: 1500px){
+  
+  .logo{
+    width: 20%;
+  }
+
+  .img_sobre{
+    width: 800px;
+  }
+
+  .container-sobre{
+    margin-top: 15px;
+  }
+
+  .info-sobre h2{
+    margin-bottom: unset;
+    margin: 20px;
+  }
+
+  .container-sobre p{
+    width: 80%;
+    font-size: 20px;
+    margin-left: unset;
+  }
+
+  .quadro-sobre{
+    width: 55%;
+  }
+
+  .psicoterapia h2{
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+
+  .psicoterapia p{
+    width: 75%;
+    font-size: 23px;
+  }
+
+  .undraw-sobre{
+    width: 75%;
+    margin-top: 70px;
+  }
+
+  .profissional{
+    width: 100%;
+}
+
+.div-final {
+    height: 640px;
+    margin: 5% 0 0;
+}
+
+}
+
+@media(max-width: 800px){
+
+  .logo{
+    width: 25%;
+  }
+
+  li a {
+    font-size: 18px;
+}
+
+hr {
+  width: 95%;
+  margin-left: 20px;
+}
+
+ul li ul{
+  min-width: 12rem;
+}
+
+li{
+  padding: 1.3rem;
+}
+
+.info-sobre h2 {
+  margin: 20px;
+  font-size: 25px;
+}
+
+.container-sobre p {
+  width: 80%;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.img_sobre {
+  width: 425px;
+  height: 262px;
+  margin-top: 30px;
+}
+
+.quadro-sobre {
+  width: 415px;
+  height: 760px;
+}
+
+.psicoterapia {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.psicoterapia h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.psicoterapia p {
+  width: 82%;
+  font-size: 12px;
+  line-height: 38px;
+}
+
+.undraw-sobre {
+  width: 85%;
+  margin-top: 70px;
+}
+
+footer p{
+  font-size: 10px;
+}
+
+.bar{
+  display: block;
+}
+
+.hambuger{
+  display: block;
+}
+
+.bar{
+  display: block;
+}
+
+.hambuger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hambuger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hambuger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  position:fixed ;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+  text-align: center;
+  transition: 0.3;
+}
+
+.nav.item{
+  margin: 16px 0;
+}
+
+.nav-menu.active{
+  left: 0;
+  z-index: 1;
+}
+
+ul li ul {
+  background: #737373;
+}
+
+.container-final{
+  padding: 25px;
+}
+
+.div-final {
+    height: 395px;
+    margin: 5% 0 0;
+}
+
+}
+
+@media(max-width: 400px){
+
+.hambuger{
+  display: block;
+}
+
+.bar{
+  display: block;
+}
+
+.hambuger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hambuger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hambuger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  position:fixed ;
+  left: -100%;
+  top: 60px;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+  text-align: center;
+  transition: 0.3;
+}
+
+.nav.item{
+  margin: 16px 0;
+}
+
+.nav-menu.active{
+  left: 0;
+  z-index: 1;
+}
+
+ul li ul {
+  background: #737373;
+}
+
+li{
+  padding: 1rem;
+}
+
+.logo{
+  width: 40%;
+  padding: 15px;
+}
+
+.menu{
+  margin-right: 24px;
+}
+
+hr {
+  width: 92%;
+  margin-left: 13px;
+}
+
+.container-sobre {
+  margin-top: 15px;
+  flex-direction: column-reverse;
+}
+
+.info-sobre {
+  margin: 5% 0 12% 0;
+}
+
+.container-sobre p {
+  width: 80%;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.img_sobre {
+  width: 100%;
+  height: 235px;
+  margin-top: unset;
+}
+
+.container-psico {
+  flex-direction: column;
+}
+
+.quadro-sobre {
+  width: 100%;
+  height: 680px;
+}
+
+.psicoterapia {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.psicoterapia p {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.undraw-sobre {
+  width: 85%;
+  margin: 10% 0 10% 0;
+}
+
+.container-final{
+  padding: unset;
+}
+
+.div-final {
+    background-image: url(../assets/Rectangle\ 1.png);
+    width: 100%;
+    height: 570px;
+    border-radius: unset;
+    margin-bottom: 15px;
+}
+
+}
