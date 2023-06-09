@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço Florir</title>
     <link rel="stylesheet" href="../css/contato.css">
+    <script src="../js/contato.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("u_kVBISgnVFeG1Iem");
+    })();
+</script>
 </head>
 <body>
     <header>
@@ -43,25 +52,25 @@
     <section>
         <div class="contatoALL">
             <div class="contatoE">
-                <form method="post" action="/PHP/send_email.php">
+                <form onsubmit="emailjs.sendForm('default_service', 'XXXXXX', this); return false;" method="post">
                     <h1>Nos Contate!</h1>
-
-                    <input class="nome" type="text" id="nome" placeholder="Seu nome">
-                    <small class="erro"></small>
-
+                    <input class="nome" type="text" id="name" placeholder="Seu nome">
                     <input class="email" type="text" id="email" placeholder="Insira seu E-mail">
-                    <small class="erro"></small>
-
-                    <input class="msg" type="text" id="mensagem" placeholder="Insira sua mensagem">
-                    <small class="erro"></small>
+                    <input class="msg" type="text" id="message" placeholder="Insira sua mensagem">
                 </form>
-                <div class="botao">
-                    <input class="botao" type="submit" value="Enviar" onclick="sendEmail()">
-                    <P id="sucesso"></P>
-                </div>
+                <button class="botao" onclick="sendMail()">Enviar</button>
             </div>
             <div class="contatoD">
-
+                <div class="infoD">
+                    <h1>Reembolso</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <img class="banner-contato" src="../assets/img-contato.png" alt="banner contato">
+                    <div class="social-media">
+                        <a class="button-background-move" role="button" href="https://www.instagram.com/florir_psico/">Instagram</a>
+                        <a class="button-background-move" role="button" href="">Facebook</a>
+                        <a class="button-background-move" role="button" href="">Youtube</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -97,36 +97,62 @@ li {
     color: white;
   }
 
-  .contatoALL{
+  .contatoALL {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
-    height: 790px;
-    margin-bottom: 8%;
-  }
+    height: 850px;
+    margin: 2% 0 2% 0;
+}
 
   .contatoE{
     background-color: #EBEBEB;
-    width: 45%;
-    height: 105%;
-    margin: 55px;
+    width: 40%;
+    height: 95%;
     border-radius: 20px;
-    box-shadow: 20px 25px 61px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.25);
   }
 
   .contatoD{
     background-color: #EBEBEB;
-    width: 45%;
-    height: 105%;
-    margin: 55px;
+    width: 40%;
+    height: 95%;
     border-radius: 20px;
-    box-shadow: -27px 25px 61px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  .infoD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+  }
+
+  .infoD h1{
+    margin-top: 50px;
+  }
+
+  .infoD p {
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    line-height: 30px;
+    font-family: 'Text Me One';
+}
+
+  .banner-contato{
+    width: 80%;
   }
 
   form{
@@ -134,81 +160,386 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 60%;
+    height: 65%;
+  }
+
+   input{
+    width: 590px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
+  }
+
+  .msg{
+    width: 590px;
+    height: 260px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
+  }
+
+  h1{
+    font-family: 'Text Me One';
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .botao{
+    width: 160px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: #C6C5C5;
+    color: black;
+    font-family: 'Text Me One';
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
   }
   
-    .nome{
-      width: 590px;
-      height: 50px;
-      border-radius: 10px;
-      border: none;
-      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
-    }
+  .botao:hover {
+    background: #A4A4A4;
+  }
   
-    .email{
-      width: 590px;
-      height: 50px;
-      border-radius: 10px;
-      border: none;
-      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
-    }
-
-    .msg{
-      width: 590px;
-      height: 245px;
-      border-radius: 10px;
-      border: none;
-      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
-    }
-
-    h1{
-      font-family: 'Text Me One';
-      font-size: 40px;
-      text-decoration: none;
-      font-weight: 500;
-      margin-bottom: 20px;
-    }
-
-    .botao{
-      width: 160px;
-      height: 55px;
-      border-radius: 5px;
-      border: none;
-      box-shadow: 13px 13px 47px rgba(0, 0, 0, 0.25);
-    }
-
-    input::placeholder{
-      font-family: 'Text Me One';
-      margin-left: 70px;
-    }
-
+  .botao:active {
+    background: #A4A4A4;
+    top: 2px;
+  }
   
+  .botao:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
 
+  input::placeholder{
+    font-family: 'Text Me One';
+    font-size: 15px;
+    /* padding-left: 10px; */
+    text-indent: 10px;
 
+  }
 
+  .social-media {
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .button-background-move{
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 42px 13px;
+    outline: 0;
+    z-index: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Text Me One';
+  }
+  
+  .button-background-move::after {
+    content: "";
+    background-color: #ffa9a9;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-background-move:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+  
   footer{
     height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .hambuger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+    display: unset;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+  }
+  
+  .nav-link{
+    transition: 0.7s ease;
+  }
+
+  @media(max-width: 1500px){
+
+    .logo{
+      width: 20%;
+    }
+
+    hr {
+      width: 96%;
+   }
+
+    .contatoD{
+      width: 45%;
+      height: 90%;
+    }
+
+    .contatoE{
+      width: 45%;
+      height: 90%;
+    }
+
+    input{
+      width: 470px;
+    }
+
+    .msg{
+      width: 470px;
+    }
+
+    .banner-contato{
+      width: 85%;
+    }
+
+    .social-media{
+      width: 90%;
+    }
+
+    .social-media a{
+      padding: 13px 35px 13px;
+    }
+
+  }
+
+  @media(max-width: 800px){
+
+    .logo{
+      width: 28%;
+    }
+
+    hr {
+      width: 95%;
+      margin-left: 20px;
+    }
+
+    .bar{
+      display: block;
+    }
+    
+    .hambuger{
+      display: block;
+    }
+    
+    .bar{
+      display: block;
+    }
+    
+    .hambuger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    
+    .hambuger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hambuger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+      position:fixed ;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: rgb(206, 206, 206);
+      width: 100%;
+      text-align: center;
+      transition: 0.3;
+    }
+    
+    .nav.item{
+      margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+      left: 0;
+      z-index: 1;
+    }
+    
+    ul li ul {
+      background: #737373;
+    }
+
+    .contatoALL{
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1675px;
+      margin: 5% 0% 5% 0% ;
+    }
+
+    .contatoE {
+    width: 85%;
+    height: 800px;
+    }
+
+    input {
+        width: 555px;
+    }
+
+    .msg {
+        width: 555px;
+    }
+
+    .contatoD {
+        width: 85%;
+        height: 800px;
+    }	
+
+  }
+
+  @media(max-width: 400px){
+
+    .hambuger{
+      display: block;
+    }
+    
+    .bar{
+      display: block;
+    }
+    
+    .hambuger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    
+    .hambuger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hambuger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+      position:fixed ;
+      left: -100%;
+      top: 60px;
+      gap: 0;
+      flex-direction: column;
+      background-color: rgb(206, 206, 206);
+      width: 100%;
+      text-align: center;
+      transition: 0.3;
+    }
+    
+    .nav.item{
+      margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+      left: 0;
+      z-index: 1;
+    }
+    
+    ul li ul {
+      background: #737373;
+      min-width: 12rem;
+    }
+    
+    .logo{
+      width: 50%;
+    }
+
+    li{
+      padding: 1rem;
+    }
+    
+    li a{
+      font-size: 19px;
+    }
+    
+    .menu{
+      margin-right: 35px;
+    }
+
+    .logo {
+      width: 50%;
+  }
+  
+  .contatoALL {
+      height: 1486px;
+      margin: 8% 0% 8% 0%;
+  }
+  
+  .contatoE {
+      width: 90%;
+      height: 650px;
+  }
+  
+  form {
+      height: 76%;
+  }
+  
+  h1 {
+      font-size: 35px;
+  }
+  
+  input {
+      width: 300px;
+  }
+  
+  .msg {
+      width: 300px;
+  }
+  
+  .contatoD {
+      width: 90%;
+      height: 800px;
+  }
+  
+  .infoD p {
+      font-size: 16px;
+      width: 90%;
+  }
+  
+  .banner-contato {
+      width: 90%;
+  }
+  
+  .social-media {
+      width: 68%;
+      flex-direction: column;
+      height: 25%;
+  }
+
+    
+
+  }
+
+
+

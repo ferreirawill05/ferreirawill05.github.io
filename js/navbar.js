@@ -10,4 +10,4 @@ document.querySelector(".nav-link").forEach(n => n.
 addEventListener("click", () => {
     hambuger.classList.remove("active");
     navMenu.classList.remove("active");
-})); 
+}));  
